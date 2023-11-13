@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>APPLICANT LOGIN</title>
+    <link href="logo.jpg" rel="icon" type="image/jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://www.agbenubridgeschools.com.ng/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://www.agbenubridgeschools.com.ng/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+     
+     <style>
+          .hero{
+      height:20vh;
+      color:white;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .container1{
+        padding:2%;
+    }
+
+        
+         .row-Contact{
+            display: flex;
+            align-items: top;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top:50px;
+            padding-bottom:20px;
+            /* border:1px solid red; */
+            }
+            .col-3-Contact{
+                flex-basis: 50%;
+                min-width: 300px;
+                padding:20px 50px 20px 60px;
+                /* background:midnightblue; */
+                border-radius: 30px;
+                /* box-shadow:  15px 30px green;
+                border-radius: 30px;
+                background:skyblue; 
+                border:1px solid red;*/
+            }
+
+            .col-3-Contact input{
+                border:2px solid midnightblue;
+                width:90%;  
+                height:30px;
+                font-size: 15px;           
+            }
+
+         @media only screen and (max-width: 750px) {
+            .about-content h1{
+                width:100%;
+            } 
+            .col-3-Contact{
+                flex-basis: 100%;
+            }
+            .contact-form input{
+                width:90%;             
+            }
+         }
+     </style>
+</head>
+
+
+<script>
+    
+     function errorMsg() {
+
+        var msg = document.getElementById('msg');
+        var msg2 = document.getElementById('msg2');
+        var UsernameLog = document.getElementById('UsernameLog');
+        var Password = document.getElementById('Password');
+
+        if (UsernameLog.value=="") {
+            msg.innerHTML = 'Enter Username, it is empty';
+            msg2.innerHTML = '';
+            UsernameLog.style.borderColor="green";
+            return false;
+        }
+        if (Password.value=="") {
+            msg.innerHTML = 'Enter Phone Number or password, it is empty';
+            msg2.innerHTML = '';
+            Password.style.borderColor="green";
+            UsernameLog.style.borderColor="skyblue";
+            return false;
+        }
+      
+    } 
+
+</script>
+
+
+<body>
+<style>
+  
+/*   .navbar a{
+	  color: white;
+  } */
+  .navbar .dropdown-menu a{
+    color: black;
+  }
+  .navbar a:hover{
+    color: red;
+    font-weight:bold;
+    /* font: size 30px; */
+  }
+
+</style>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="login.php.html#">
+        <img src="logo.png" alt="" width="50" height="34">
+        AGBENU BRIDGE SCHOOLS
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.php.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="login.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about.php.html">About Agbenu Bridge</a></li>
+              <li><a class="dropdown-item" href="about.php.html#OurVision">Our Vision</a></li>
+             <!--  <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="about.php.html#OurMission">Our Mission</a></li>
+              <li><a class="dropdown-item" href="about.php.html#OurCoreValues">Our Core Values</a></li>
+              <li><a class="dropdown-item" href="about.php.html#SchoolAnthem">School Anthem</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="contactUs.php.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="Gallery.php.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="login.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Updates 
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="news.php.html">News</a></li>
+              <li><a class="dropdown-item" href="Events.php.html">Events</a></li>
+              <li><a class="dropdown-item" href="staff.php.html">Our Staff</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="login.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admission
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="signUp.php.html">New Applicant</a></li>
+              <li><a class="dropdown-item" href="login.php.html">Existing Applicant</a></li>
+              <li><a class="dropdown-item" href="login.php.html#">Admission List</a></li>
+              <li><a class="dropdown-item" href="login.php.html#">How To Apply</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="login.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="portal.html">Staff</a></li>
+              <li><a class="dropdown-item" href="portal/students.html">Student</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="HRM.php.html">Jobs/Career</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+      
+  <div
+      class="hero page-inner overlay"
+      style="background-image: url('https://www.agbenubridgeschools.com.ng/img/1.jpg')">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">Applicant's Login</h1>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <!-- <li class="breadcrumb-item"><a href="index.html">Home</a></li> 
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  About
+                </li>-->
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row-Contact">
+        <div class="col-3-Contact">
+            <div id="msg2" class="" id="msg" style="color:skyblue; text-align:center;" ></label></div>
+            <div class="" style="color:skyblue; text-align:center;"> <label for="" id="msg"></label></div>
+             <form action="https://www.agbenubridgeschools.com.ng/admissionCode.php" METHOD="POST" onsubmit="return(error())">
+                    <label for="" style="color:midnightblue" >Username</label>
+                    <input type="text" name="UsernameLog" id="UsernameLog" placeholder="Username" required>
+                    <label for="" style="color:midnightblue" >Password</label>
+                    <input type="password" name="Password" id="Password" placeholder="Password or Phone Number" required>
+
+                    <div style="text-align:center;">
+                        <button class="btn btn-success" name="SignIn" id="SignIn">Sign in</button>
+                        <br>
+                        <a href="signUp.php.html" style="color:white;">Sign Up</a>
+                    </div>
+                </form>
+        </div>       
+    </div>
+    
+ <!-- Js Plugins -->
+    <script src="https://www.agbenubridgeschools.com.ng/js/jquery-3.3.1.min.js"></script>
+    <script src="https://www.agbenubridgeschools.com.ng/js/jquery.slicknav.js"></script>
+    <script src="https://www.agbenubridgeschools.com.ng/js/owl.carousel.min.js"></script>
+    <script src="https://www.agbenubridgeschools.com.ng/js/main.js"></script>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+    
+    <style>
+    .fs-widget ul {
+        text-decoration: none !important;
+        color:black;
+        list-style: none;
+    }
+</style>
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+        <div class="container1" style="padding:2%; background:whitesmoke;">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-about">
+                        <div class="fs-logo">
+                            <a href="login.php.html#">
+                                <img src="logo.png" alt="" height="40px" width="50px">
+                            </a>
+                        </div>
+                        <p>Agbanu Bridge College is a model primary and secondary school established in  2008 to provide qualitative secondary education. The school was  birthed to be part of the corrections to the alarming geometrically  growing social vices associated with the falling standard of education in Otukpo town and the country as a whole and also insufficient  parenting; breakdown in community and extended family
+                        </p>  
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Contact</h5>
+                        <br>
+                        <h5>Address</h5>
+                          <p style="width:100%;">
+                           Ogbe Obande Road, Pipeline, Otukpo, Benue State, Nigeria.
+                          </p>
+                          <hr>
+                        <h5>phone</h5>
+                          <p style="width:100%;">
+                          +234 8033709859;
+                          <br>
+                          +234 8062288623
+                          </p>
+                          <h5>Email</h5>
+                          <p>info@agbenubridgecollege.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>About </h5>
+                        <ul>
+                            <li><a href="about.php.html">About Us</a></li>
+                            <li><a href="about.php.html#OurVision">Our Vision</a></li>
+                            <li><a href="about.php.html#OurMission">Our Mission</a></li>
+                            <li><a href="about.php.html#OurCoreValues">Contact Us</a></li>
+                            <li><a href="about.php.html#SchoolAnthem">School Anthem</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+</body>
+</html>

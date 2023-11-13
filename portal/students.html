@@ -1,0 +1,75 @@
+
+
+<script>
+    
+     function errorMsg() {
+        var errMessege = document.getElementById('errMessege');
+        var Username = document.getElementById('Username');
+        var passWrd = document.getElementById('passWrd');
+
+        if (Username.value=="") {
+        //alert('Enter First Name, it is empty');
+        errMessege.innerHTML = 'Enter Username, it is empty';
+        Username.style.borderColor="red";
+        return false;
+        }
+        if (passWrd.value=="") {
+        //alert('Enter First Name, it is empty');
+        errMessege.innerHTML = 'Enter Password, it is empty';
+        passWrd.style.borderColor="red";
+        return false;
+        }
+     }
+</script>        
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Student Sign In</title>
+      <link href="https://www.agbenubridgeschools.com.ng/portal/students/logo/logoPng.png" rel="icon" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="students/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section"><!-- outside background -->
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-7 col-lg-5">
+					<div class="login-wrap p-4 p-md-5"><!-- inner background -->
+		      	<div class="icon d-flex align-items-center justify-content-center">
+		      		<img src="logo/1.png" alt="" width="100px" height="100px">
+		      	</div>
+		      	<h3 class="text-center mb-4" style="color:white;">Student Sign In</h3>
+						<form action="https://www.agbenubridgeschools.com.ng/portal/students/indexCode.php" METHOD="POST" onsubmit="return(errorMsg())" class="login-form">
+                        <div id="errMessege" style="color:red; text-align:center;"></div>
+		      		<div class="form-group">
+		      			<input type="text" name="Username"  id="Username" class="form-control rounded-left" placeholder="Reg. Number" required>
+		      		</div>
+	            <div class="form-group d-flex">
+	              <input type="password" name="passWrd"  id="passWrd" class="form-control rounded-left" placeholder="Phone or Password" required>
+	            </div>
+	            <div class="form-group">
+	            	<button type="submit" name="login"  class="form-control btn btn-primary rounded submit px-3">Login</button>
+	            </div>
+	            <div class="form-group d-md-flex">
+	          </form>
+	        </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>-->
+
+	</body>
+</html>
+

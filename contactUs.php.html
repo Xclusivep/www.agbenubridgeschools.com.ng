@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us</title>
+  <link href="logo.jpg" rel="icon" type="image/jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+  <script src="bootstrap5/js/bootstrap.js"></script>
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+
+<style>
+  .hero{
+      height:50vh;
+      color:white;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .container1{
+        padding:2%;
+    }
+</style>
+  
+<style>
+        
+        .row-Contact{
+           display: flex;
+           align-items: top;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           padding-top:20px;
+           padding-bottom:20px;
+           }
+           .col-3-Contact{
+               flex-basis: 30%;
+               min-width: 300px;
+               padding:0 50px 20px 60px;
+               /* box-shadow:  15px 30px green;
+               border-radius: 30px;
+               background:skyblue; */
+           }
+           .iconAws{
+               font-size:100px;
+              /* text-align:center;
+               border:1px solid red; */
+           }
+           .row-Contact .col-3-Contact p,
+           .contact-form p{
+               color:black;
+               text-align:left;
+           }
+           .contact-form{
+               /* border:1px solid red; */
+               width:90vw;
+               margin:5vw;
+               text-align:center
+           }
+           .contact-form input{
+               border:1px solid midnightblue;
+               width:30%;  
+               height:30px;
+               font-size: 15px;           
+           }
+           .contact-form textarea{
+               border:1px solid midnightblue;
+               width:90%;     
+               margin-top:10px;          
+           }
+        @media only screen and (max-width: 750px) {
+           .about-content h1{
+               width:100%;
+           } 
+           .col-3-Contact{
+               flex-basis: 100%;
+           }
+           .contact-form input{
+               width:90%;             
+           }
+        }
+    </style>
+<body>
+
+  <style>
+  
+/*   .navbar a{
+	  color: white;
+  } */
+  .navbar .dropdown-menu a{
+    color: black;
+  }
+  .navbar a:hover{
+    color: red;
+    font-weight:bold;
+    /* font: size 30px; */
+  }
+
+</style>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="contactUs.php.html#">
+        <img src="logo.png" alt="" width="50" height="34">
+        AGBENU BRIDGE SCHOOLS
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.php.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="contactUs.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about.php.html">About Agbenu Bridge</a></li>
+              <li><a class="dropdown-item" href="about.php.html#OurVision">Our Vision</a></li>
+             <!--  <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="about.php.html#OurMission">Our Mission</a></li>
+              <li><a class="dropdown-item" href="about.php.html#OurCoreValues">Our Core Values</a></li>
+              <li><a class="dropdown-item" href="about.php.html#SchoolAnthem">School Anthem</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="contactUs.php.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="Gallery.php.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="contactUs.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Updates 
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="news.php.html">News</a></li>
+              <li><a class="dropdown-item" href="Events.php.html">Events</a></li>
+              <li><a class="dropdown-item" href="staff.php.html">Our Staff</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="contactUs.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admission
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="signUp.php.html">New Applicant</a></li>
+              <li><a class="dropdown-item" href="login.php.html">Existing Applicant</a></li>
+              <li><a class="dropdown-item" href="contactUs.php.html#">Admission List</a></li>
+              <li><a class="dropdown-item" href="contactUs.php.html#">How To Apply</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="contactUs.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="portal.html">Staff</a></li>
+              <li><a class="dropdown-item" href="portal/students.html">Student</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="HRM.php.html">Jobs/Career</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  
+  <div
+      class="hero page-inner overlay"
+      style="background-image: url('img/contact.JPG')">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">About Us</h1>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <!-- <li class="breadcrumb-item"><a href="index.html">Home</a></li> 
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  About
+                </li>-->
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+<!--Contact Us Starts-->
+
+          <div class="row-Contact">
+                <div class="col-3-Contact">
+                        <div class="iconAws"><i class="fa fa-map-marker"></i></div>
+                        <p>ADDRESS</p>
+                        Ogbe Obande Road, Pipeline, Otukpo, Benue State, Nigeria.
+                </div>
+                <div class="col-3-Contact">
+                        <div class="iconAws"><i class="fa fa-phone"></i></div>
+                        <p>+234 8033709859;</p>
+                        <p>+234 8062288623</p>
+                </div>
+                <div class="col-3-Contact">
+                        <div class="iconAws"><i class="fa fa-envelope"></i></div>
+                        <p>email@gmail.com</p>
+                </div> 
+            </div>
+            <div class="contact-form">
+                    <p>Send Us a Message</p>
+            <form action="contactUs.php.html">
+                <input type="text" name="" id="" placeholder="Your Full Name">
+                <input type="text" name="" id="" placeholder="Your Phone Number">
+                <input type="text" name="" id="" placeholder="Your Email">
+                <br>
+                <textarea name="" id="" cols="1000" rows="5" placeholder="Your Message"></textarea>
+                <br><br>
+                <button class="btn btn-success">SEND</button>
+            </form>
+        </div>
+
+<!--Contact Us ends-->
+
+    <style>
+    .fs-widget ul {
+        text-decoration: none !important;
+        color:black;
+        list-style: none;
+    }
+</style>
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+        <div class="container1" style="padding:2%; background:whitesmoke;">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-about">
+                        <div class="fs-logo">
+                            <a href="contactUs.php.html#">
+                                <img src="logo.png" alt="" height="40px" width="50px">
+                            </a>
+                        </div>
+                        <p>Agbanu Bridge College is a model primary and secondary school established in  2008 to provide qualitative secondary education. The school was  birthed to be part of the corrections to the alarming geometrically  growing social vices associated with the falling standard of education in Otukpo town and the country as a whole and also insufficient  parenting; breakdown in community and extended family
+                        </p>  
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Contact</h5>
+                        <br>
+                        <h5>Address</h5>
+                          <p style="width:100%;">
+                           Ogbe Obande Road, Pipeline, Otukpo, Benue State, Nigeria.
+                          </p>
+                          <hr>
+                        <h5>phone</h5>
+                          <p style="width:100%;">
+                          +234 8033709859;
+                          <br>
+                          +234 8062288623
+                          </p>
+                          <h5>Email</h5>
+                          <p>info@agbenubridgecollege.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>About </h5>
+                        <ul>
+                            <li><a href="about.php.html">About Us</a></li>
+                            <li><a href="about.php.html#OurVision">Our Vision</a></li>
+                            <li><a href="about.php.html#OurMission">Our Mission</a></li>
+                            <li><a href="about.php.html#OurCoreValues">Contact Us</a></li>
+                            <li><a href="about.php.html#SchoolAnthem">School Anthem</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+
+<script src="https://www.agbenubridgeschools.com.ng/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

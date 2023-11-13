@@ -1,0 +1,641 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link href="logo.jpg" rel="icon" type="image/jpg">
+  <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+  
+</head>
+<style>
+    .carousel-item img{
+      width:100%; 
+      height:100vh; 
+      /*object-fit: cover;
+      object-position: center;*/
+    }
+    .carousel-item span{
+      background:black;
+      opacity: 0.5;
+    }
+    .card-container{
+      margin: 10px;
+      width: 100%;
+      background:LightGray;
+    }
+    
+    .card{
+      padding: 20px;
+      border:0;
+      transition: all .3s;
+    }
+    .card:hover{
+      transform: scale(1.05);
+    }
+    .card h5{
+      text-align:center;
+    }
+    p .btn{
+      border: 1px solid black;
+      border-radius:20px;
+      /* background:grey; */
+    }
+    @media screen and (max-width: 900px) {
+      .carousel-item img{
+        height:revert; 
+      }
+    }
+</style>
+<body>
+<!-- header menue startes -->
+  <section>
+    <style>
+  
+/*   .navbar a{
+	  color: white;
+  } */
+  .navbar .dropdown-menu a{
+    color: black;
+  }
+  .navbar a:hover{
+    color: red;
+    font-weight:bold;
+    /* font: size 30px; */
+  }
+
+</style>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.php.html#">
+        <img src="logo.png" alt="" width="50" height="34">
+        AGBENU BRIDGE SCHOOLS
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.php.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about.php.html">About Agbenu Bridge</a></li>
+              <li><a class="dropdown-item" href="about.php.html#OurVision">Our Vision</a></li>
+             <!--  <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="about.php.html#OurMission">Our Mission</a></li>
+              <li><a class="dropdown-item" href="about.php.html#OurCoreValues">Our Core Values</a></li>
+              <li><a class="dropdown-item" href="about.php.html#SchoolAnthem">School Anthem</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="contactUs.php.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="Gallery.php.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Updates 
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="news.php.html">News</a></li>
+              <li><a class="dropdown-item" href="Events.php.html">Events</a></li>
+              <li><a class="dropdown-item" href="staff.php.html">Our Staff</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admission
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="signUp.php.html">New Applicant</a></li>
+              <li><a class="dropdown-item" href="login.php.html">Existing Applicant</a></li>
+              <li><a class="dropdown-item" href="index.php.html#">Admission List</a></li>
+              <li><a class="dropdown-item" href="index.php.html#">How To Apply</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.php.html#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="portal.html">Staff</a></li>
+              <li><a class="dropdown-item" href="portal/students.html">Student</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="HRM.php.html">Jobs/Career</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+    </section>
+<!-- header menue ends -->
+
+<!-- sliding pics startes -->
+  <section>
+    <!-- Carousel starts-->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="5" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="6" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="7" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="8" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="9" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="10" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="11" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="12" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="13" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="14" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="15" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="16" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="17" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="18" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="19" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="20" class="" style="height:20px;"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="21" class="" style="height:20px;"></button>
+                  <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> -->
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+                    <div class="carousel-item active">
+            <img src="portal/website/23.10.26.05.20IMG_9995.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>board games</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.10.26.04.26IMG_0351.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>talent hunt 2023</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.07.21.02.22precious.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Tiv culture</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.07.21.02.54p&#32;(2).JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>cultural display</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.07.04.12.19miss&#32;3.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>fulani culture</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.07.04.12.13miss&#32;2.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Agbenu elementary school pupils</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.07.04.12.13miss.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Mr and Miss Agbenu 2023</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.23.10.16staff1.jfif.html" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Team of Staff</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.23.10.25staff.jfif.html" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Team of Staff</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.21.11.33IMG_9209.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>chess club</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.21.11.45IMG_9909.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>elementary school</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.17.03.35IMG_1870.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>ladies session</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.16.10.52IMG-20210228-WA0004.jpg" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Sciences</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.16.09.08IMG-20210608-WA0044.jpg" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Biology class</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.14.12.27IMG-20210610-WA0005.jpg" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Computer lab</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.05.06.39IMG-20210608-WA0001.jpg" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Class session</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.05.06.24IMG-20210604-WA0001.jpg" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Chemistry lab</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.04.04.12.441.jpg" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Elementary school</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.03.17.12.15IMG_1796.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Group of Students</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.03.16.10.20IMG_1822.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>School Picnic</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.03.16.10.02IMG_2327.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Cultural Day-Dance in progress</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <div class="carousel-item ">
+            <img src="portal/website/23.03.16.10.23IMG_8063.JPG" alt="" class="d-block img-responsive img-fluid">
+            <div class="carousel-caption">
+              <h3><span>Cultural Day-Fulani Attire</span></h3>
+              <!-- <p>pic 1 Describe</p> -->
+            </div>
+          </div>
+                  <!-- <div class="carousel-item">
+            <img src="2.JPG" alt="Chicago" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+              <h3>pic 2</h3>
+              <p>pic of blue</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="3.JPG" alt="New York" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+              <h3>pic3</h3>
+              <p>pic of green</p>
+            </div>
+          </div> -->
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" ></span>
+        </button>
+      </div>
+    <!-- Carousel starts-->
+  </section>
+<!-- sliding pics ends -->
+
+
+<br><br>
+
+
+<section class="card-container">
+    <!-- Carousel ends-->
+    <div class="container-fluid">
+      <div class="row justify-content-around">
+        <!-- card 1 begins-->
+        <div class="card col-sm-12 col-md-6 col-lg-4 hover-zoom" >
+                      <img src="portal/events/23.03.17.10.53IMG_8203.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cultural Activities</h5>
+            <p class="card-text">It&#39;s important to teach children about, and celebrate cultural diversity. Cultural Activities in School Has Far More Influence on the Life and Lea</p>
+            <p style="text-align:center;"><a href="Events.php.html" class="btn btn-light">Learn More>></a></p>
+          </div>
+        </div>
+        <!-- card 1 ends-->
+
+        <!-- card 2 begins-->
+        <div class="card col-sm-12 col-md-6 col-lg-4" >
+          <img src="img/aboutHome.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">About Us</h5>
+            <p class="card-text">
+              Agbenu Bridge Schools is a model primary and secondary school established in 2008 to provide qualitative education. 
+            </p>
+            <p style="text-align:center;"><a href="about.php.html" class="btn btn-light">Learn More>></a></p>
+          </div>
+        </div>
+        <!-- card 2 ends-->
+        
+        <!-- card 3 begins-->
+        <div class="card col-sm-12 col-md-6 col-lg-4" >
+          <img src="img/staff.jfif.html" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Our Staff</h5>
+            <p class="card-text">Serious attention and efforts is channeled to the recruitment of qualified teachers and other staff. Staff who really love what they do.</p>
+            <p style="text-align:center;"><a href="staff.php.html" class="btn btn-light">Learn More>></a></p>
+          </div>
+        </div>
+        <!-- card 3 ends-->
+      </div>
+    </div>
+</section>
+
+
+
+<!-- School Administrator start-->
+<section>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+          <h1 style="text-align:center; font-weight:bold;">A Welcome Address From the College Administrator</h1>
+          <br>
+            <!-- card 1 begins-->
+            <div class="card col-sm-12 col-md-8 col-lg-7" >
+              <!-- <img src="img/staff.JPG" class="card-img-top" alt="..."> -->
+              <div class="card-body">
+                <!-- <h5 class="card-title">Our Staff</h5> -->
+                <p class="card-text">
+                  Welcome and greetings. <br>
+                  One behalf of the management, staff and students of Agbenu bridge schools, I welcome you to our official website. <br>
+                  Agbenu bridge schools Otukpo is co-educational from 10-12years of age at the point of entry. İt is also for Nigerians and expatriates, founded September 2008, situated at Ogbe Obande Avenue pipeline Otukpo Benue state.
+                </p>
+                <p class="card-text">
+                  At Agbenu bridge schools, excellence is our watch word, we believe that whatever is worth doing at all is Worth doing well, we seek to establish this standard in our every operations and instil this value in our wards.
+                  Every child committed in our care is guaranteed quality education under skilled instructors. 
+                </p>
+                <p class="card-text">
+                  We aim to establish a solid foundation for all our children through their academic and professional journey in life.
+                  We are also interested in the physical, social and psychological development of our students edging them to become responsible and impact driven members of society.
+                </p>
+                <p class="card-text">
+                 Our facilities are up-to-date making us infrastructurally the positioned to deliver quality education to your children. 
+                </p>
+                <p class="card-text">
+                We welcome application from all parts of the country. we are ready to make kings out of your male wards and queens out of your female wards.
+                </p>
+                <p class="card-text">
+                We have an amazing group of passionate teaching and non-teaching staff who really love what they do.
+                </p>
+                <p class="card-text">
+                Our environment is secured with visible presence of security personnels and CCTV cameras at various points.
+                </p>
+                <br>
+                <p class="card-text">
+                  <b>Mr Oche Ogaba Michael</b><br>
+                  <i>College Administrator</i>
+                </p>
+              </div>
+            </div>
+            <!-- card 1 ends-->
+
+            <!-- card 2 begins-->
+            <div class="card col-sm-12 col-md-4 col-lg-4" >
+              <img src="img/Administrator.jfif.html" class="card-img-top" alt="...">
+              <!-- <div class="card-body">
+                <h5 class="card-title">Our Staff</h5>
+                <p class="card-text">Serious attention and efforts is channeled to the recruitment of qualified teachers and other staff. Staff who really love what they do.</p>
+              </div> -->
+            </div>
+            <!-- card 2 ends-->
+        </div>
+    </div>
+</section>
+<!-- School Administrator ends-->
+
+
+<section style="background:honeydew;">
+    <h1 style="text-align:center; font-weight:bold;">Latest News</h1>
+    <div class="container-fluid">
+      <div class="row justify-content-around">
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+                        <img src="portal/news/23.06.12.06.471686312022760.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+              <h5 class="card-title">Admission for 2023/2024.</h5>
+              <p class="card-text">Extrance exam comes up on: 17/06/2023 and 7/7/2023<br />
+ </p>
+            </div>
+          </div>
+            <!-- card Gallery ends-->
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+                        <img src="portal/news/23.04.21.11.16agbenu&#32;bridge&#32;LOGO.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+              <h5 class="card-title">EID MUBARAK</h5>
+              <p class="card-text">The Staff and Students of Agbenu Bridge Schools Otukpo, wishes our Muslim brothers and sisters Happy </p>
+            </div>
+          </div>
+            <!-- card Gallery ends-->
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+                        <img src="portal/news/23.04.02.12.55IMG_9399.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+              <h5 class="card-title">Third term 2022/2023</h5>
+              <p class="card-text">Resumption date for third term 2022/2023 is 17th April 2023 </p>
+            </div>
+          </div>
+            <!-- card Gallery ends-->
+              </div>
+    </div>
+    <p style="text-align:center;"><a href="news.php.html" class="btn btn-primary">More News>></a></p>
+</section>
+
+<br>
+
+<!-- From Our Gallery starts -->
+<section>
+    <h1 style="text-align:center; font-weight:bold;">From Our Gallery</h1>
+    <div class="container-fluid">
+      <div class="row justify-content-around">
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+              <img src="portal/galery/23.03.18.09.06IMG_8287.JPG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"  style="text-align:center; font-weight:bold;">Cultural Activities</p>
+              </div>
+            </div>
+            <!-- card Gallery ends-->
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+              <img src="portal/galery/23.03.18.09.43IMG_8099.JPG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"  style="text-align:center; font-weight:bold;">Cultural Activities</p>
+              </div>
+            </div>
+            <!-- card Gallery ends-->
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+              <img src="portal/galery/23.03.18.09.22IMG_8063.JPG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"  style="text-align:center; font-weight:bold;">Cultural Activities</p>
+              </div>
+            </div>
+            <!-- card Gallery ends-->
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+              <img src="portal/galery/23.03.18.09.09event.JPG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"  style="text-align:center; font-weight:bold;">Cultural Activities</p>
+              </div>
+            </div>
+            <!-- card Gallery ends-->
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+              <img src="portal/galery/23.03.18.09.51IMG_8998.JPG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"  style="text-align:center; font-weight:bold;">School Sporting Activities</p>
+              </div>
+            </div>
+            <!-- card Gallery ends-->
+                  <!-- card Gallery begins-->
+          <div class="card col-sm-12 col-md-6 col-lg-4" >
+              <img src="portal/galery/23.03.18.09.34IMG_1421.JPG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"  style="text-align:center; font-weight:bold;">School Sporting Activities</p>
+              </div>
+            </div>
+            <!-- card Gallery ends-->
+              </div>
+    </div>
+    <br>
+    <p style="text-align:center;"><a href="Gallery.php.html" class="btn btn-primary">More Pictures>></a></p>
+</section>
+<!-- From Our Gallery starts -->
+
+<section>
+    <div class="section section-4 bg-light">
+      <div class="container1" >
+        <h1>Google Map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31665.71111878338!2d8.118545192004406!3d7.216425827093113!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105ac3afa274461d%3A0x3fba7bfdab25d546!2sAGBENU%20BRIDGE%20SCHOOLS!5e0!3m2!1sen!2sng!4v1676796298591!5m2!1sen!2sng" width="100%" height="600" style="border:0; padding:2%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> 
+    </div>
+</section>
+<br><br>
+    <style>
+    .fs-widget ul {
+        text-decoration: none !important;
+        color:black;
+        list-style: none;
+    }
+</style>
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+        <div class="container1" style="padding:2%; background:whitesmoke;">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-about">
+                        <div class="fs-logo">
+                            <a href="index.php.html#">
+                                <img src="logo.png" alt="" height="40px" width="50px">
+                            </a>
+                        </div>
+                        <p>Agbanu Bridge College is a model primary and secondary school established in  2008 to provide qualitative secondary education. The school was  birthed to be part of the corrections to the alarming geometrically  growing social vices associated with the falling standard of education in Otukpo town and the country as a whole and also insufficient  parenting; breakdown in community and extended family
+                        </p>  
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Contact</h5>
+                        <br>
+                        <h5>Address</h5>
+                          <p style="width:100%;">
+                           Ogbe Obande Road, Pipeline, Otukpo, Benue State, Nigeria.
+                          </p>
+                          <hr>
+                        <h5>phone</h5>
+                          <p style="width:100%;">
+                          +234 8033709859;
+                          <br>
+                          +234 8062288623
+                          </p>
+                          <h5>Email</h5>
+                          <p>info@agbenubridgecollege.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>About </h5>
+                        <ul>
+                            <li><a href="about.php.html">About Us</a></li>
+                            <li><a href="about.php.html#OurVision">Our Vision</a></li>
+                            <li><a href="about.php.html#OurMission">Our Mission</a></li>
+                            <li><a href="about.php.html#OurCoreValues">Contact Us</a></li>
+                            <li><a href="about.php.html#SchoolAnthem">School Anthem</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+
+<script src="bootstrap5/js/bootstrap.js"></script>
+</body>
+</html>
